@@ -19,8 +19,12 @@ public class Product {
      * @param name
      * @param price
      */
+
+
     public Product(String seller, String name, double price) {
-        //initialize fields
+        this.seller = seller;
+        this.name = name;
+        this.price = price;
     }
 
     /**
@@ -29,6 +33,9 @@ public class Product {
      */
     public Product(Product original) {
         // Use the constructor implemented above
+        this.seller = original.seller;
+        this.price = original.price;
+        this.name = original.name;
     }
 
     /**
@@ -36,7 +43,8 @@ public class Product {
      * @return seller
      */
     public final String getSeller() {
-        //code here
+        // code here
+        return seller;
     }
 
     /**
@@ -45,6 +53,7 @@ public class Product {
      */
     public final String getName() {
         // code here
+        return name;
     }
 
     /**
@@ -54,6 +63,7 @@ public class Product {
      */
     public double getPrice(Cart cart) {
         // code here
+        return cart.totalPrice();
     }
 
     /**
@@ -71,5 +81,6 @@ public class Product {
      */
     public String toString() {
         // code here
+        return "some";
     }
 }

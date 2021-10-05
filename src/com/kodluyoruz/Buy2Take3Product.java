@@ -6,8 +6,8 @@ package com.kodluyoruz;
  * It extends the Product class with one instance variable
  */
 
-public class Buy2Take3Product extends Product {
-    //original product
+public class Buy2Take3Product  { //extends PRODUCT
+   /* //original product
     private final Product original;
 
     /**
@@ -31,6 +31,7 @@ public class Buy2Take3Product extends Product {
     public boolean canBeReduced() {
         // You can not discount the price of Buy2Take3 product
         // code here
+        return true;
     }
 
     /**
@@ -43,5 +44,8 @@ public class Buy2Take3Product extends Product {
         // calculate unit price of this product purchased
         // as Buy2Take3
         // code here
+        return 0.0;
     }
+
 }
+

@@ -3,7 +3,7 @@ package com.kodluyoruz;
 import java.util.Scanner;
 
 public class Main {
-    /**
+    /*
      * This is the main class for the application, interacting
      * with the customer, adding to the cart different products to
      * be purchased and finally calculating the total amount to be paid

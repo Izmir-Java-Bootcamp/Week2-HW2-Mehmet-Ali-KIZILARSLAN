@@ -4,12 +4,12 @@ package com.kodluyoruz;
  * Subclass representing a discounted product to be
  * purchased. It extends the Product class with two instance variables
  */
-public class DiscountedProduct extends Product {
+public class DiscountedProduct  { //extends product
     // Original product
-    private final Product original;
+    //private final Product original;
 
     // Discount in percent (%)
-    private final double discount;
+    //private final double discount;
 
     /**
      * Construct a discounted product
@@ -29,6 +29,7 @@ public class DiscountedProduct extends Product {
      */
     public double getPrice(Cart cart) {
         // code here
+        return cart.totalPrice();
     }
 
     /**
@@ -37,5 +38,6 @@ public class DiscountedProduct extends Product {
      */
     public String toString() {
         // code here
+        return "something ";
     }
 }
