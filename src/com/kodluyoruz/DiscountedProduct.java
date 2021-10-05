@@ -4,12 +4,12 @@ package com.kodluyoruz;
  * Subclass representing a discounted product to be
  * purchased. It extends the Product class with two instance variables
  */
-public class DiscountedProduct  { //extends product
+public class DiscountedProduct  extends Product{ //extends product
     // Original product
-    //private final Product original;
+    private final Product original;
 
     // Discount in percent (%)
-    //private final double discount;
+    private final double discount;
 
     /**
      * Construct a discounted product
@@ -17,9 +17,16 @@ public class DiscountedProduct  { //extends product
      * @param discount
      */
     public DiscountedProduct(Product original, double discount) {
+        super(original);
+        if(original.canBeReduced()) {
+            System.out.println("price can be reduced ");
+        }
+
         // if the price can not be reduced you should print a message and
         // terminate the program. Use IllegalArgumentException to terminate.
         // code here
+        this.original = null;
+        this.discount = 0;
     }
 
     /**

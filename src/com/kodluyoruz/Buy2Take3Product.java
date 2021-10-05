@@ -6,8 +6,8 @@ package com.kodluyoruz;
  * It extends the Product class with one instance variable
  */
 
-public class Buy2Take3Product  { //extends PRODUCT
-   /* //original product
+public class Buy2Take3Product extends Product { //extends PRODUCT
+    //original product
     private final Product original;
 
     /**
@@ -18,9 +18,12 @@ public class Buy2Take3Product  { //extends PRODUCT
      * @param original
      */
     public Buy2Take3Product(Product original) {
+        super(original);
         // if the price can not be reduced you should print a message and
         // terminate the program. Use IllegalArgumentException to terminate.
         // code here
+
+        this.original = null;
     }
 
     /**

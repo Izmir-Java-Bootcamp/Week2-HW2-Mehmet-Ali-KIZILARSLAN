@@ -14,6 +14,7 @@ public class Product {
     private final double price;
 
     /**
+     * DONE
      * Construct a new Product given the following parameters
      * @param seller
      * @param name
@@ -28,6 +29,7 @@ public class Product {
     }
 
     /**
+     * DONE
      * Construct a new Product from a given product
      * @param original
      */
@@ -39,6 +41,7 @@ public class Product {
     }
 
     /**
+     * DONE
      * Return the seller of this product
      * @return seller
      */
@@ -48,6 +51,7 @@ public class Product {
     }
 
     /**
+     * DONE
      * Return the name of this product
      * @return name
      */
@@ -57,6 +61,7 @@ public class Product {
     }
 
     /**
+     * DONE I GUESS?
      * Return the price of this product
      * @param cart
      * @return price
@@ -81,6 +86,6 @@ public class Product {
      */
     public String toString() {
         // code here
-        return "some";
+        return name + " ";
     }
 }

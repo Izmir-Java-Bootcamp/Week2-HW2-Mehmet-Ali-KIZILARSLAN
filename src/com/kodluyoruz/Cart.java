@@ -21,6 +21,7 @@ public class Cart {
      */
     public List<Product> getProducts(){
         // code here
+        return products;
     }
 
     /**
@@ -28,7 +29,7 @@ public class Cart {
      * @param product
      */
     public void addProduct(Product product) {
-        // code here
+        products.add(product);
     }
 
     /**
@@ -36,7 +37,7 @@ public class Cart {
      *  @param products
      */
     public void addProducts(List<Product> products) {
-         // code here
+        this.products.addAll(products);
     }
 
     /**
@@ -45,7 +46,9 @@ public class Cart {
      * @param howManyTimes number of times to add product
      */
     public void addProduct(Product product, int howManyTimes) {
-        // code here
+        for(int i = 0; i < howManyTimes;i++ ){
+            this.products.add(product);
+        }
     }
 
     /**
@@ -54,6 +57,11 @@ public class Cart {
      */
     public double totalPrice(){
         // code here
+        double total =0;
+        for(int i = 0 ; i < products.size() ; i++) {
+            total += products.get(i).getPrice();
+        }
+        return total;
     }
 
     /**
@@ -63,9 +71,9 @@ public class Cart {
      * TV [discounted by 20.00%] 4000.00 TL. Sold by Merve
      */
     public String toString() {
-        String result = "";
+
         // code here
-        return result;
+        return "something";
     }
 }
 
