@@ -36,6 +36,7 @@ public class DiscountedProduct  extends Product{ //extends product
      */
     public double getPrice(Cart cart) {
         // code here
+
         return cart.totalPrice();
     }
 

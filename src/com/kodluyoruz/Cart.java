@@ -59,7 +59,7 @@ public class Cart {
         // code here
         double total =0;
         for(int i = 0 ; i < products.size() ; i++) {
-            total += products.get(i).getPrice();
+            //total += products.get(i).getPrice();
         }
         return total;
     }

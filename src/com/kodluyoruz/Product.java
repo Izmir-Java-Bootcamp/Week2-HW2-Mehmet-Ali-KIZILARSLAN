@@ -66,9 +66,9 @@ public class Product {
      * @param cart
      * @return price
      */
-    public double getPrice(Cart cart) {
+    public double getPrice(Cart cart) { // cart üzerinden ürünü sayıp ona göre fiyat vermemiz gerekiyor
         // code here
-        return cart.totalPrice();
+        return 0.0;
     }
 
     /**
@@ -86,6 +86,6 @@ public class Product {
      */
     public String toString() {
         // code here
-        return name + " ";
+        return name;
     }
 }
