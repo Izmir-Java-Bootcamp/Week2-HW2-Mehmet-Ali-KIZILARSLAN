@@ -1,5 +1,5 @@
 package com.kodluyoruz;
-
+//INTERFACE CREATION TO INTERACT WITH COSTUMER
 import java.util.Scanner;
 
 public class Main {
@@ -15,9 +15,47 @@ public class Main {
      * @param cart the shopping cart of a given customer
      */
     public static void askCustomer(Cart cart){
+
+        Scanner scanner = new Scanner((System.in));
+        String name;
+        String seller;
+        int price;
+        int amount;
+        String discountQuestion;
+        boolean discount;
+        boolean buy2Take3;
+
         // Code to read from console the product name, seller,
+        System.out.println("Enter the name of product: ");
+        name = scanner.nextLine();
+
+        System.out.println("Enter the name of seller: ");
+        seller = scanner.nextLine();
+
         // price, number of products, discount and
+        System.out.println("Enter the price: ");
+        price = scanner.nextInt();
+
+        System.out.println("Enter the amount of product : ");
+        amount = scanner.nextInt();
+
+        System.out.println("Do you want discount(Y/N) ");
+        discountQuestion = scanner.nextLine();
+        if (discountQuestion.equals("Y") || discountQuestion.equals("y")){
+            discount = true;
+        }
+        else{
+            discount = false;
+        }
+
+
         // if Buy2Take3 applies.
+        if(amount >= 3){
+            DiscountedProduct applyDiscount;
+//APPLY DISCOUNT
+
+        }
+
         // Then create a product of the correct type
         // and add it to the shopping cart
     }

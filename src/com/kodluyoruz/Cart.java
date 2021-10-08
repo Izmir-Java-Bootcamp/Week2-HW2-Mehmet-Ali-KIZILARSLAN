@@ -71,9 +71,13 @@ public class Cart {
      * TV [discounted by 20.00%] 4000.00 TL. Sold by Merve
      */
     public String toString() {
-
+    String text = "";
         // code here
-        return "something";
+        for(int i = 0 ; i < products.size(); i++){
+            text.concat(products.get(i).getName() + " of " + products.get(i).getSeller() + " ");
+        }
+
+        return text;
     }
 }
 
