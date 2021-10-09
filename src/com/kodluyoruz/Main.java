@@ -25,7 +25,7 @@ public class Main {
         boolean discount;
         boolean buy2Take3;
 
-        // Code to read from console the product name, seller,
+            // Code to read from console the product name, seller,
         System.out.println("Enter the name of product: ");
         name = scanner.nextLine();
 
@@ -48,13 +48,18 @@ public class Main {
             discount = false;
         }
 
+        if(discount){
+            DiscountedProduct applyDiscount(new Product(seller,name,price), 20 );
+        }
 
         // if Buy2Take3 applies.
         if(amount >= 3){
-            DiscountedProduct applyDiscount;
 //APPLY DISCOUNT
-
+            //if amount
+            cart.addProduct(new Product(seller, name, price),amount-1);
+            cart.addProduct(new Product(seller, name, 0));
         }
+
 
         // Then create a product of the correct type
         // and add it to the shopping cart
